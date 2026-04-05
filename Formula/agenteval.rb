@@ -1,22 +1,22 @@
 class Agenteval < Formula
   desc "Lint, benchmark, and CI gate for AI coding instructions"
   homepage "https://github.com/lukasmetzler/agenteval"
-  version "0.8.4"
+  version "0.8.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/lukasmetzler/agenteval/releases/download/v#{version}/agenteval-darwin-arm64"
-      sha256 "cfb44ac1227a16c70dd2d4fb0fa525ebccdfbbb93952595a5b5dc943c58d8c06"
+      sha256 "b4d7d81a0be0cb7075cb651f2d5f0d365d8603b529839d4e158bda8007618718"
     else
       url "https://github.com/lukasmetzler/agenteval/releases/download/v#{version}/agenteval-darwin-x64"
-      sha256 "3b23625fce940f5a97d358ec1e925bbc8e7395413157d9d5c79437374e1a2ab9"
+      sha256 "3712af2cfe0edb7de629da2a475d5903e4475eb3b828d1778ed83331bf7af4a5"
     end
   end
 
   on_linux do
     url "https://github.com/lukasmetzler/agenteval/releases/download/v#{version}/agenteval-linux-x64"
-    sha256 "a6dd2cd218972abe6de3b0ab8392160fbc2d1c3fc4cdcac3a97babd9b2cafb53"
+    sha256 "59729b785863d678fe80a97a728c95d557890c571eea66d8d2c8239630c0248b"
   end
 
   def install
